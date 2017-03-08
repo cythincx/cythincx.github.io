@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -204,7 +204,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -284,7 +284,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-05T16:15:17+08:00">
                 2017-03-05
@@ -404,7 +404,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-05T00:28:07+08:00">
                 2017-03-05
@@ -444,8 +444,34 @@
       
         
           
-            <blockquote>
-<p>测试一下，renshuo你好哇</p>
+            <p>以前就曾经在卖域名的网站搜过chengyuxing.com，看到自己的同名域名还没被占用，就想着以后有空要买下来做点有意义的东西。然而这个念头一搁置，就是2年的时光。最近偶然又想起这回事，查了一下域名还在，便决定赶紧买下来，以免一旦没能立即行动，这事便又被耽搁了。</p>
+<p>从买域名到搭博客，也就用了周五到周末的2个晚上。为了让“开篇”真的有点“开篇”的样子，我把这过程记录下来，参考的资料也贴出来，做个流水清单。</p>
+<h1 id="一览"><a href="#一览" class="headerlink" title="一览"></a>一览</h1><ol>
+<li>从godaddy上买域名</li>
+<li>用hexo在github pages上弄个可以访问的静态博客</li>
+<li>用dnspod把域名解析到github pages的地址</li>
+</ol>
+<h1 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h1><p>从<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">godaddy</a>上买域名。</p>
+<p>国内的需要备案，国外的可免去这个麻烦。而且godaddy支持支付宝，非常方便。godaddy上购买的域名，正式使用之前需要先验证邮箱。不过不知道是什么原因，我的验证邮件隔了1天多才收到。</p>
+<h1 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h1><p>github允许每个账号建立一个名为yourname.github.io的仓库，可以提交在该仓库中提交一些静态页面，并通过yourname.github.io/xxx来访问。</p>
+<blockquote>
+<p><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></p>
+</blockquote>
+<h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><p>hexo是依赖于node.js的一个框架，可以非常方便的生成markdown的文章，然后通过hexo deploy这个命令把文章push到yourname.github.io这个仓库，如此便能通过yourname.github.io这个域名来查看了。</p>
+<p>下面这篇文章是我在搭建过程中借鉴的：</p>
+<blockquote>
+<p><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">HEXO+Github,搭建属于自己的博客</a></p>
+</blockquote>
+<p>github上能搜到很多hexo的主题，挑一个最喜欢的主题也真不是件容易的事。</p>
+<blockquote>
+<p><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的 Hexo 主题？</a></p>
+</blockquote>
+<p>贴几个hexo的常用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#创建管理自己博客的目录</div><div class="line">hexo init</div><div class="line"></div><div class="line">#创建一个md文章</div><div class="line">hexo new [blog-name]</div><div class="line"></div><div class="line">#生成静态页面</div><div class="line">hexo generate</div><div class="line"></div><div class="line">#启动本地服务，可以通过http://localhost:4000来访问</div><div class="line">hexo server</div><div class="line"></div><div class="line">#推送到yourname.github.io步骤：</div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<h1 id="dns解析"><a href="#dns解析" class="headerlink" title="dns解析"></a>dns解析</h1><p>把买的域名的解析到yourname.github.io这个域名上，博客至此就算搭完啦。</p>
+<p>过程参照如下链接，使用dnspod绑定域名解析。</p>
+<blockquote>
+<p><a href="http://www.jianshu.com/p/252b542b1abf" target="_blank" rel="external">Blog绑定域名——Godaddy + DNSPod</a></p>
 </blockquote>
 
           
@@ -524,7 +550,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -536,8 +562,8 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
@@ -587,7 +613,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
